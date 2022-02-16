@@ -66,6 +66,12 @@
             border-radius: 10px;
             margin-right: 7%;
             font-size: 25px;
+            transition: 0.5s;
+
+            &:hover{
+                color: rgb(75, 75, 75);
+                background-color: rgb(252, 252, 252);
+            }
         }
     }
     .info{

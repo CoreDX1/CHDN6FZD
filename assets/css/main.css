@@ -70,8 +70,14 @@
   align-items: center;
   color: aliceblue;
   position: fixed;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 0;
+}
+.contenedor .info div #video {
+  width: 30vw;
+  position: fixed;
+  left: 0;
+  bottom: 35vh;
 }
 .contenedor .info div {
   margin: 0 20px;

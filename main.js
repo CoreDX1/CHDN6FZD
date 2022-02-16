@@ -4,6 +4,7 @@ const galeria = [
         class: "walC0",
         nombre: "Alchemist",
         imagen: "images/imagen_01.png",
+        video: "video/alche.webm",
         movilidad: "305",
         tipo: "Fuerza",
         atributo: "25",
@@ -14,6 +15,7 @@ const galeria = [
         class: "walC1",
         nombre: "Naga",
         imagen: "images/imagen_02.png",
+        video: "video/naga.webm",
         movilidad: "320",
         tipo: "Agilidad",
         atributo: "21",
@@ -24,6 +26,7 @@ const galeria = [
         class: "walC2",
         nombre: "Terrorblade",
         imagen: "images/imagen_03.png",
+        video: "video/terror.webm",
         movilidad: "315",
         tipo: "Agilidad",
         atributo: "30",
@@ -34,6 +37,7 @@ const galeria = [
         class: "walC3",
         nombre: "Luna",
         imagen: "images/imagen_04.png",
+        video: "video/luna.webm",
         movilidad: "325",
         tipo: "Agilidad",
         atributo: "24",
@@ -51,11 +55,13 @@ for ( menuBar of galeria ){
     menu.appendChild(contenedorMenu)
 }
 
+document.getElementById("video").play();
 
 header.addEventListener("click", (e) => {
     if(e.target.classList.contains("walC0")){ 
         header.style.backgroundImage = `url(${galeria[0]["imagen"]})`;
         hero.innerHTML = `${galeria[0]["nombre"]}`;
+        document.getElementById("video").src = "video/alche.webm";
         atributo_num.innerHTML = `${galeria[0]["atributo"]}`
         atributo_.innerHTML = `${galeria[0]["tipo"]}`
         tipo_ataque.innerHTML = `${galeria[0]["ataque"]}`
@@ -63,6 +69,7 @@ header.addEventListener("click", (e) => {
     }else if (e.target.classList.contains("walC1")){
         header.style.backgroundImage = `url(${galeria[1]["imagen"]})`;
         hero.innerHTML = `${galeria[1]["nombre"]}`;
+        document.getElementById("video").src = `${galeria[1]["video"]}`;
         atributo_num.innerHTML = `${galeria[1]["atributo"]}`
         atributo_.innerHTML = `${galeria[1]["tipo"]}`
         tipo_ataque.innerHTML = `${galeria[1]["ataque"]}`
@@ -70,6 +77,7 @@ header.addEventListener("click", (e) => {
     }else if (e.target.classList.contains("walC2")){
         header.style.backgroundImage = `url(${galeria[2]["imagen"]})`;
         hero.innerHTML = `${galeria[2]["nombre"]}`;
+        document.getElementById("video").src = `${galeria[2]["video"]}`;
         atributo_num.innerHTML = `${galeria[2]["atributo"]}`
         atributo_.innerHTML = `${galeria[2]["tipo"]}`
         tipo_ataque.innerHTML = `${galeria[2]["ataque"]}`
@@ -77,6 +85,7 @@ header.addEventListener("click", (e) => {
     }else if (e.target.classList.contains("walC3")){
         header.style.backgroundImage = `url(${galeria[3]["imagen"]})`;
         hero.innerHTML = `${galeria[3]["nombre"]}`;
+        document.getElementById("video").src = `${galeria[3]["video"]}`;
         atributo_num.innerHTML = `${galeria[3]["atributo"]}`
         atributo_.innerHTML = `${galeria[3]["tipo"]}`
         tipo_ataque.innerHTML = `${galeria[3]["ataque"]}`

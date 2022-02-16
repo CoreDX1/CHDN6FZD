@@ -1,0 +1,15 @@
+{
+  "name": "desafio_06_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css", 
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}

@@ -91,35 +91,38 @@ let atributoLuna = galeria[3]["atributo"]
 let ataqueLuna = galeria[3]["ataque"]
 let velocidadLuna = galeria[3]["movilidad"]
 
-wal0.onclick = function(){
+wal0.addEventListener("click",function(){
     header.style.backgroundImage = `url(${imagen_00})`;
     hero.innerHTML = `${nombre_00}`;
     atributo_num.innerHTML = `${atributoAlche}`
     atributo_.innerHTML = `${tipoAlche}`
     tipo_ataque.innerHTML = `${ataqueAlche}`
     velocidad_num.innerHTML = `${velocidadAlche}`
-}
-wal1.onclick = function(){
+})
+
+wal1.addEventListener("click",function(){
     header.style.backgroundImage = `url(${imagen_01})`;
     hero.innerHTML = `${nombre_01}`;
     atributo_num.innerHTML = `${atributoNaga}`
     atributo_.innerHTML = `${tipoNaga}`
     tipo_ataque.innerHTML = `${ataqueNaga}`
     velocidad_num.innerHTML = `${velocidadNaga}`
-}
-wal2.onclick = function(){
+})
+
+wal2.addEventListener("click",function(){
     header.style.backgroundImage = `url(${imagen_02})`;
     hero.innerHTML = `${nombre_02}`;
     atributo_num.innerHTML = `${atributoTerro}`
     atributo_.innerHTML = `${tipoTerro}`
     tipo_ataque.innerHTML = `${ataqueTerro}`
     velocidad_num.innerHTML = `${velocidadTerro}`
-}
-wal3.onclick = function(){
+})
+
+wal3.addEventListener("click",function(){
     header.style.backgroundImage = `url(${imagen_03})`;
     hero.innerHTML = `${nombre_03}`;
     atributo_num.innerHTML = `${atributoLuna}`
     atributo_.innerHTML = `${tipoLuna}`
     tipo_ataque.innerHTML = `${ataqueLuna}`
     velocidad_num.innerHTML = `${velocidadLuna}`
-}
+})

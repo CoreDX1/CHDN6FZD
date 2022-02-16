@@ -71,15 +71,15 @@ let nombre_01 = galeria[1]["nombre"]
 let nombre_02 = galeria[2]["nombre"]
 let nombre_03 = galeria[3]["nombre"]
 
-let tipoNaga = galeria[1]["tipo"]
-let atributoNaga = galeria[1]["atributo"]
-let ataqueNaga = galeria[1]["ataque"]
-let velocidadNaga = galeria[1]["movilidad"]
-
 let tipoAlche = galeria[0]["tipo"]
 let atributoAlche = galeria[0]["atributo"]
 let ataqueAlche = galeria[0]["ataque"]
 let velocidadAlche = galeria[0]["movilidad"]
+
+let tipoNaga = galeria[1]["tipo"]
+let atributoNaga = galeria[1]["atributo"]
+let ataqueNaga = galeria[1]["ataque"]
+let velocidadNaga = galeria[1]["movilidad"]
 
 let tipoTerro = galeria[2]["tipo"]
 let atributoTerro = galeria[2]["atributo"]
